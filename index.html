@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="INK & SOUL - a site about tattoo culture, history and art" />
+  <title>INK & SOUL — Tattoo Culture</title>
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+
+      <div class="logo">
+        <span class="logo-main">INK</span>
+        <span class="logo-amp">&amp;</span>
+        <span class="logo-main">SOUL</span>
+      </div>
+
+      <!-- navigation links -->
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="pages/history.html" class="nav-link">History</a>
+        <a href="pages/styles.html" class="nav-link">Styles</a>
+        <a href="pages/artists.html" class="nav-link">Artists</a>
+        <a href="pages/care.html" class="nav-link">Aftercare</a>
+      </nav>
+
+      <!-- hamburger for mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+
+    <!-- mobile dropdown -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="pages/history.html">History</a>
+      <a href="pages/styles.html">Styles</a>
+      <a href="pages/artists.html">Artists</a>
+      <a href="pages/care.html">Aftercare</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- hero section -->
+    <section class="hero">
+      <div class="hero-noise" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">The Art of the Permanent</p>
+        <h1 class="hero-title">Your skin<br><em>is the canvas.</em></h1>
+        <p class="hero-sub">Exploring the culture, history, and artistry of tattooing from ancient ritual to modern masterpiece.</p>
+        <a href="pages/history.html" class="btn-primary">Explore the History</a>
+      </div>
+
+      <!-- responsive image using picture tag -->
+      <figure class="hero-figure">
+        <picture>
+          <source media="(min-width: 1024px)"
+                  srcset="https://images.unsplash.com/photo-1565058379802-bbe93b2f703a?w=900&auto=format&fit=crop&q=60" />
+          <source media="(min-width: 600px)"
+                  srcset="https://images.unsplash.com/photo-1565058379802-bbe93b2f703a?w=600&auto=format&fit=crop&q=60" />
+          <img src="https://images.unsplash.com/photo-1565058379802-bbe93b2f703a?w=400&auto=format&fit=crop&q=60"
+               alt="Close-up of intricate black tattoo linework on skin"
+               class="hero-img" />
+        </picture>
+      </figure>
+
+      <div class="hero-deco" aria-hidden="true">
+        <div class="deco-circle c1"></div>
+        <div class="deco-circle c2"></div>
+        <svg class="deco-line" viewBox="0 0 200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100 0 Q150 150 50 300 Q-50 450 100 600" stroke="#c4a882" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.5"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- stats bar -->
+    <section class="intro-strip">
+      <div class="strip-item">
+        <span class="strip-num">5,000+</span>
+        <span class="strip-label">Years of History</span>
+      </div>
+      <div class="strip-divider"></div>
+      <div class="strip-item">
+        <span class="strip-num">&#8734;</span>
+        <span class="strip-label">Unique Styles</span>
+      </div>
+      <div class="strip-divider"></div>
+      <div class="strip-item">
+        <span class="strip-num">~20%</span>
+        <span class="strip-label">of Adults Have One</span>
+      </div>
+    </section>
+
+    <!-- cards grid - links to all pages -->
+    <section class="features">
+      <div class="section-label">Discover</div>
+      <h2 class="section-title">What's Inside</h2>
+
+      <div class="cards-grid">
+
+        <a href="pages/history.html" class="card">
+          <figure class="card-fig">
+            <img src="https://images.unsplash.com/photo-1612459284270-d7408e1cc576?w=600&auto=format&fit=crop&q=60"
+                 alt="Ancient tribal tattoo designs on forearm"
+                 class="card-photo" loading="lazy" />
+          </figure>
+          <div class="card-body">
+            <h3>History of Tattoos</h3>
+            <p>From Ötzi the Iceman to Polynesian warriors — trace the ancient roots of body art across civilizations.</p>
+            <span class="card-link">Read More &rarr;</span>
+          </div>
+        </a>
+
+        <a href="pages/styles.html" class="card card-featured">
+          <figure class="card-fig">
+            <img src="https://images.unsplash.com/photo-1598316775012-5ad0a4cfb2db?w=600&auto=format&fit=crop&q=60"
+                 alt="Bold traditional tattoo flash art with thick outlines and bright colors"
+                 class="card-photo" loading="lazy" />
+          </figure>
+          <div class="card-body">
+            <h3>Tattoo Styles</h3>
+            <p>Traditional, Neo-Trad, Blackwork, Watercolor, Realism — explore the full spectrum of tattoo artistry.</p>
+            <span class="card-link">Explore Styles &rarr;</span>
+          </div>
+        </a>
+
+        <a href="pages/artists.html" class="card">
+          <figure class="card-fig">
+            <img src="https://images.unsplash.com/photo-1590246815117-1a4c9e7a27b3?w=600&auto=format&fit=crop&q=60"
+                 alt="Tattoo artist working on client in a studio"
+                 class="card-photo" loading="lazy" />
+          </figure>
+          <div class="card-body">
+            <h3>Notable Artists</h3>
+            <p>Meet the legendary tattooers who shaped an industry — and the new generation pushing it forward.</p>
+            <span class="card-link">Meet Artists &rarr;</span>
+          </div>
+        </a>
+
+        <a href="pages/care.html" class="card">
+          <figure class="card-fig">
+            <img src="https://images.unsplash.com/photo-1583394293214-de2f6c7e2e1a?w=600&auto=format&fit=crop&q=60"
+                 alt="Applying lotion to a fresh tattoo during healing"
+                 class="card-photo" loading="lazy" />
+          </figure>
+          <div class="card-body">
+            <h3>Aftercare Guide</h3>
+            <p>Keep your ink looking fresh for life. Everything you need to know about healing and long-term care.</p>
+            <span class="card-link">Learn More &rarr;</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- quote i found that i thought was cool -->
+    <section class="quote-section">
+      <div class="quote-inner">
+        <div class="quote-mark" aria-hidden="true">"</div>
+        <blockquote>
+          The tattoo has always been connected to magic. It marks you as
+          belonging — to a tribe, to a moment, to yourself.
+        </blockquote>
+        <cite>&mdash; Henk Schiffmacher, Tattoo historian</cite>
+      </div>
+    </section>
+
+    <!-- fun facts section -->
+    <section class="facts">
+      <div class="section-label">Quick Facts</div>
+      <h2 class="section-title">Did You Know?</h2>
+      <div class="facts-grid">
+        <div class="fact-card">
+          <div class="fact-num">01</div>
+          <p>The word <em>tattoo</em> comes from the Tahitian word <strong>tatau</strong>, introduced to Europe by Captain James Cook in 1769.</p>
+        </div>
+        <div class="fact-card">
+          <div class="fact-num">02</div>
+          <p>The oldest known tattooed human is Ötzi the Iceman, whose 61 tattoos are over <strong>5,300 years old</strong>.</p>
+        </div>
+        <div class="fact-card">
+          <div class="fact-num">03</div>
+          <p>In Japan, traditional <em>tebori</em> tattooing is done by hand — each dot placed individually with a wooden or metal rod.</p>
+        </div>
+        <div class="fact-card">
+          <div class="fact-num">04</div>
+          <p>The first electric tattoo machine was patented by Samuel O'Reilly in <strong>1891</strong>, adapted from Thomas Edison's engraving pen.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- links to outside sources i used for research -->
+    <section class="resources">
+      <div class="section-label">Go Deeper</div>
+      <h2 class="section-title">Further Reading</h2>
+      <ul class="resources-list">
+        <li>
+          <a href="https://www.smithsonianmag.com/history/tattoos-skin-deep-art-130555"
+             target="_blank" rel="noopener noreferrer" class="resource-link">
+            Smithsonian Magazine &mdash; The Ancient Art of Tattooing
+            <span class="ext-icon">&nearr;</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.metmuseum.org/toah/hd/tato/hd_tato.htm"
+             target="_blank" rel="noopener noreferrer" class="resource-link">
+            The Metropolitan Museum of Art &mdash; Tattooing in Japan
+            <span class="ext-icon">&nearr;</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Norman_Collins"
+             target="_blank" rel="noopener noreferrer" class="resource-link">
+            Wikipedia &mdash; Norman "Sailor Jerry" Collins
+            <span class="ext-icon">&nearr;</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.nationalgeographic.com/magazine/article/tattoos"
+             target="_blank" rel="noopener noreferrer" class="resource-link">
+            National Geographic &mdash; The Ancient Art of the Tattoo
+            <span class="ext-icon">&nearr;</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">INK &amp; SOUL</div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="pages/history.html">History</a>
+        <a href="pages/styles.html">Styles</a>
+        <a href="pages/artists.html">Artists</a>
+        <a href="pages/care.html">Aftercare</a>
+      </nav>
+      <p class="footer-note">
+        Made for ICS Web Design &middot; Spring 2026 &middot;
+        Images from <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a>.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
